@@ -1,20 +1,9 @@
 html{
   text-align: center;
-<<<<<<< HEAD
   background-color:black;
   background-image:url("./images/operationIndependence.jpg");
-=======
-  background-color: black;
-  background-image: url("paper.gif");
-  height: 100vh;
-  color: white;
 }
 
-.App-logo {
->>>>>>> 4f3b678a458fa71e270e1701d692759aca53d44c
-  height: 100vh;
-  color:white;
-}
 
 .formWrap{
   background-color: rgba(0,0,0,.7);

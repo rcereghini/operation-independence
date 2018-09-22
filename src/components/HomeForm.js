@@ -6,7 +6,7 @@ function HomeForm(props){
       <div className="formWrap">
         <form name="homeScreen" netlify>
           <h2>Ready to Learn More?</h2>
-          <p className="homeFormText">Please provide your information. An associate will be in contact with you...</p><br/>
+          <p className="homeFormText">Please provide your information, and an associate will be in contact with you shortly...</p><br/>
           <div class="form-group">
             <label for="exampleInputEmail1">Name</label>
             <input type="email" className="form-control" id="exampleInputEmail2" placeholder="Enter Name"/>

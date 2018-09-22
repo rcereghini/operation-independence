@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navigation from './components/Navigation.js'
 import logo from "./images/OpinAdsLogo.png";
 import "./App.css";
 
@@ -6,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Navigation/>
         <img className="headerLogo" src={logo}/>
         <div className="formWrap">
           <form name="homeScreen" netlify>

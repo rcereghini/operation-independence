@@ -1,5 +1,8 @@
 import React from 'react'
-import sliderImageOne from "../images/operationIndependence.png";
+import sliderImageOne from "../images/socialMedia.png";
+import sliderImageTwo from "../images/facebookFinger.png";
+import sliderImageThree from "../images/facebookPhone.png";
+
 
 function Carousel(props){
   return (
@@ -14,10 +17,10 @@ function Carousel(props){
           <img className="d-block w-100" src={sliderImageOne} alt="First slide"/>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImageOne} alt="Second slide"/>
+          <img className="d-block w-100" src={sliderImageTwo} alt="Second slide"/>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={sliderImageOne} alt="Third slide"/>
+          <img className="d-block w-100" src={sliderImageThree} alt="Third slide"/>
         </div>
       </div>
       <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

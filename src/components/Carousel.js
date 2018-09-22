@@ -1,6 +1,6 @@
 import React from 'react'
-import sliderImageOne from "../images/socialMedia.png";
-import sliderImageTwo from "../images/facebookFinger.png";
+import sliderImageOne from "../images/facebookFinger.png";
+import sliderImageTwo from "../images/socialMedia.png";
 import sliderImageThree from "../images/facebookPhone.png";
 
 

@@ -7,18 +7,3 @@ html{
   width: 40%;
   margin: 30px 30%;
 }
-
-.formWrap{
-  width:50%;
-  margin:40px auto;
-}
-
-.homeFormText{
-  font-size: 1.5em;
-}
-
-.formSubmitButton{
-  margin-top: 10px;
-  border-color: rgb(45,112,181);
-  background-color: rgb(45,112,181);
-}

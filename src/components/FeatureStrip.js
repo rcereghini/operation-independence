@@ -3,13 +3,17 @@ import "../styles/featureStrip.css"
 
 function FeatureStrip(props){
   return(
-    <div className="stripWrap">
-      <div className="captionWrap">
-        <h2>{props.headline}</h2>
-        <p>{props.paragraph}</p>
-        <button type="button" className="btn btn-primary featureStripButton">{props.buttonText}</button>
+    <div className="container">
+      <div className="row">
+        <div className="col-12 col-sm-6 col-md-8 captionWrap">
+          <h2>{props.headline}</h2>
+          <p>{props.paragraph}</p>
+          <button type="button" className="btn btn-primary featureStripButton">{props.buttonText}</button>
+        </div>
+        <div className="col-6 col-md-4">
+          <img className="stripImage" src={props.image}/>
+        </div>
       </div>
-      <img className="stripImage" src={props.image}/>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-.stripWrap{
+.stripWrapL{
   display:flex;
   justify-content:space-between;
   padding: 1.5em;
@@ -6,19 +6,19 @@
   margin-bottom:2.5em;
 }
 
-.captionWrap{
+.captionWrapL{
   margin: 3em auto;
   margin-bottom: 40px;
-  text-align:left;
+  text-align:right;
 }
 
-.stripImage{
+.stripImageL{
   text-align:center;
   margin: 3em auto;
   width:80%;
 }
 
-.featureStripButton{
+.featureStripButtonL{
   width: 50%;
   margin: 15px auto;
   font-size:1.5em;

@@ -1,5 +1,5 @@
 .formWrap{
-  width:70%;
+  width:60%;
   margin:40px auto;
 }
 
@@ -11,4 +11,8 @@
   width: 30%;
   margin: 15px auto;
   font-size:1.5em;
+}
+
+.homeFormTextWrap{
+  text-align:center;
 }

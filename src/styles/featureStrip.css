@@ -7,15 +7,15 @@
 }
 
 .captionWrap{
-  margin: 3em auto;
+  margin: 3.3em auto;
   margin-bottom: 40px;
   text-align:left;
 }
 
 .stripImage{
   text-align:center;
-  margin: 3em auto;
-  width:80%;
+  margin: 3.3em auto;
+  width:100%;
 }
 
 .featureStripButton{

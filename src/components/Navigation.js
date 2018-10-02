@@ -17,13 +17,13 @@ function Navigation(props){
             <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Features</a>
+            <a className="nav-link" href="#features">Features</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Pricing</a>
+            <a className="nav-link" href="#pricing">Pricing</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contact Us</a>
+            <a className="nav-link" href="#contact">Contact Us</a>
           </li>
         </ul>
       </div>

@@ -43,7 +43,7 @@ class App extends Component {
         buttonText="Get Started Now!"
         image={advertiseImage}
       />
-      <hr/><br/>
+      <hr/>
       <a name="pricing">
         <Pricing
           image1={founderImage}

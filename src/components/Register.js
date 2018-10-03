@@ -6,8 +6,8 @@ import logo from "../images/OpinAdsLogo.png";
 const Register = ({ onRouteChange }) => {
   return (
     <form>
-      <img src={logo} className="logo"/>
-      <h2 className="display-5">Get Started!</h2>
+      <img src={logo} className="logo" onClick={() => onRouteChange('home')}/>
+      <h2 className="display-5 getStarted">Get Started!</h2>
       <div className="form-group">
         <label for="name">Name</label>
         <input type="text" className="form-control inputWidthTemp" id="inputName" aria-describedby="nameHelp" placeholder="Enter name"/>
@@ -25,7 +25,7 @@ const Register = ({ onRouteChange }) => {
         onClick={() => onRouteChange('home')}
         type="submit"
         className="btn btn-primary inputWidthTemp signInButton"
-        value="Sign In"
+        value="Begin Operation Independence"
       />
     </form>
   )

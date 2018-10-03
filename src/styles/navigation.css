@@ -2,3 +2,9 @@
   position:absolute;
   right: 30px;
 }
+
+.fixed{
+  position:fixed;
+  z-index:5;
+  width: 100%;
+}

@@ -6,7 +6,7 @@ import '../styles/navigation.css'
 
 function Navigation({onRouteChange}){
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed">
       <a className="navbar-brand" href="#">
         <img src={navLogo} width="150px" class="d-inline-block align-top" alt=""/>
       </a>

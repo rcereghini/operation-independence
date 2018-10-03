@@ -2,13 +2,14 @@ import React from 'react'
 import sliderImageOne from "../images/facebookFinger.png";
 import sliderImageTwo from "../images/socialMedia.png";
 import sliderImageThree from "../images/facebookPhone.png";
+import '../styles/carousel.css'
 
 
 function Carousel(props){
   return (
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <div id="carouselExampleIndicators" className="carousel slide fixedNavPadding" data-ride="carousel">
+      <ol className="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>

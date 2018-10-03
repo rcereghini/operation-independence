@@ -5,7 +5,7 @@ import logo from "../images/OpinAdsLogo.png";
 
 const Register = ({ onRouteChange }) => {
   return (
-    <form>
+    <form className="signInForm">
       <img src={logo} className="logo" onClick={() => onRouteChange('home')}/>
       <h2 className="display-5 getStarted">Get Started!</h2>
       <div className="form-group">

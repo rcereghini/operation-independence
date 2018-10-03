@@ -5,7 +5,7 @@ import logo from "../images/OpinAdsLogo.png";
 
 const SignIn = ({ onRouteChange }) => {
   return (
-    <form>
+    <form className="signInForm">
       <img src={logo} className="logo" onClick={() => onRouteChange('home')}/>
       <div className="form-group">
         <label for="exampleInputEmail1">Email address</label>

@@ -40,6 +40,7 @@ class App extends Component {
         <Carousel/>
         <a name="features">
           <FeatureStrip
+            onRouteChange={this.onRouteChange}
             headline="Introducing You to Facebook"
             paragraph="We will get you started with everything you need to launch your very own business page, including a custom cover photo, detail setup, and more!"
             buttonText="See An Example!"
@@ -54,10 +55,12 @@ class App extends Component {
           image={buildImage}
         />
         <FeatureStrip
+          onRouteChange={this.onRouteChange}
           headline="Expand Your Reach"
           paragraph="We will advertise your listing to thousands of people using Facebook Ads. We use tried and true settings that deliver high leads for little cost."
           buttonText="Get Started Now!"
           image={advertiseImage}
+          buttonFunction="() => onRouteChange('register')"
         />
         <hr/>
         <a name="pricing">

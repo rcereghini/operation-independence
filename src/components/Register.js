@@ -1,12 +1,17 @@
 import React from 'react'
-import '../styles/signIn.css'
+import '../styles/register.css'
 
 import logo from "../images/OpinAdsLogo.png";
 
-const SignIn = ({ onRouteChange }) => {
+const Register = ({ onRouteChange }) => {
   return (
     <form>
       <img src={logo} className="logo"/>
+      <h2 className="display-5">Get Started!</h2>
+      <div className="form-group">
+        <label for="name">Name</label>
+        <input type="text" className="form-control inputWidthTemp" id="inputName" aria-describedby="nameHelp" placeholder="Enter name"/>
+      </div>
       <div className="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" className="form-control inputWidthTemp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
@@ -22,11 +27,8 @@ const SignIn = ({ onRouteChange }) => {
         className="btn btn-primary inputWidthTemp signInButton"
         value="Sign In"
       />
-      <div>
-        <p onClick={() => onRouteChange('register')} className="btn inputWidthTemp">Register</p>
-      </div>
     </form>
   )
 }
 
-export default SignIn
+export default Register

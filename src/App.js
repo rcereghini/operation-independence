@@ -6,6 +6,7 @@ import FeatureStrip from './components/FeatureStrip.js'
 import FeatureStripLeft from './components/FeatureStripLeft.js'
 import Pricing from './components/Pricing.js'
 import SignIn from './components/SignIn.js'
+import Register from './components/Register.js'
 
 import logo from "./images/OpinAdsLogo.png";
 import introductionImage from "./images/introduction.png";
@@ -33,9 +34,8 @@ class App extends Component {
     return (
       <div className="App">
 
-      { this.state.route === 'signIn'
-      ? <SignIn onRouteChange={this.onRouteChange}/>
-      : <div>
+      { this.state.route === 'home'
+      ? <div>
         <Navigation onRouteChange={this.onRouteChange}/>
         <Carousel/>
         <a name="features">
@@ -80,7 +80,8 @@ class App extends Component {
         <a name="contact">
           <HomeForm/>
         </a>
-      </div>}
+      </div>
+      : ( this.state.route === 'signIn' ? <SignIn onRouteChange={this.onRouteChange}/> : <Register onRouteChange={this.onRouteChange}/> )}
       </div>
     );
   }

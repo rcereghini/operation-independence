@@ -1,8 +1,10 @@
 import React from 'react'
 import navLogo from "../images/OpinAdsLogo.png";
 
+import '../styles/navigation.css'
 
-function Navigation(props){
+
+function Navigation({onRouteChange}){
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
@@ -25,6 +27,7 @@ function Navigation(props){
           <li className="nav-item">
             <a className="nav-link" href="#contact">Contact Us</a>
           </li>
+          <li className="nav-link signIn" onClick={() => onRouteChange('signIn') }>Sign In</li>
         </ul>
       </div>
     </nav>

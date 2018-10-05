@@ -12,7 +12,7 @@ import logo from "./images/OpinAdsLogo.png";
 import introductionImage from "./images/introduction.png";
 import buildImage from "./images/buildPage.png";
 import advertiseImage from "./images/advertise.jpg";
-import founderImage from "./images/founder.jpg";
+import founderImage from "./images/founder.png";
 import silverImage from "./images/silver.jpg";
 import goldImage from "./images/gold.png";
 

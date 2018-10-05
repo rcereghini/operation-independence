@@ -17,6 +17,7 @@ function Pricing(props){
           </div>
         </div>
       <div className="col col-4">
+        <div className="comingSoon"></div>
         <div class="card">
           <img class="card-img-top" src={props.image2} alt="Card image cap"/>
           <div class="card-body">
@@ -27,6 +28,7 @@ function Pricing(props){
         </div>
       </div>
       <div className="col col-4">
+        <div className="comingSoon"></div>
         <div class="card">
           <img class="card-img-top" src={props.image3} alt="Card image cap"/>
           <div class="card-body">

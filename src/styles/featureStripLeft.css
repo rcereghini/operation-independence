@@ -47,6 +47,17 @@ p{
     flex-direction: column-reverse;
   }
 
+  .stripImage{
+    align-items:center;
+    margin:2em auto;
+    width:150px;
+    border-radius:50%;
+  }
+
+  .featureStripButtonL{
+    width:90%;
+  }
+
 
 }
 

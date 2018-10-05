@@ -56,10 +56,13 @@ p{
   .stripImage{
     align-items:center;
     margin:2em auto;
-    width:175px;
+    width:150px;
     border-radius:50%;
   }
 
+  .featureStripButton{
+    width:90%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

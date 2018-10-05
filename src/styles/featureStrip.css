@@ -53,6 +53,12 @@ p{
     flex-direction: column-reverse;
   }
 
+  .stripImage{
+    align-items:center;
+    margin:2em auto;
+    width:175px;
+    border-radius:50%;
+  }
 
 }
 

@@ -31,6 +31,9 @@
     width:90%;
   }
 
+  .formSubmitButtonWrap{
+text-align:center;  }
+
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {

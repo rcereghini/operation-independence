@@ -1,0 +1,21 @@
+.fullScreenDisplay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height: 800px;
+  width: 100%;
+  font-size:2.2em;
+  background:url('../images/socialMedia.png');
+}
+
+.fullScreenCard{
+  width: 80%;
+  background:rgba(24, 24, 24, 0.8);
+  padding: 3em;
+  color:white;
+}
+
+.itemList{
+  display: flex;
+  justify-content:flex-start;
+}

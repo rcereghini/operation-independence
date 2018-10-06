@@ -8,6 +8,8 @@ import Pricing from './components/Pricing.js'
 import SignIn from './components/SignIn.js'
 import Register from './components/Register.js'
 import PropertyPage from './PropertyPage.js'
+import Jumbotron from './components/Jumbotron.js'
+import FullScreenHeader from './components/FullScreenHeader.js'
 
 import logo from "./images/OpinAdsLogo.png";
 import introductionImage from "./images/introduction.png";
@@ -38,7 +40,7 @@ class App extends Component {
       { this.state.route === 'home'
       ? <div>
         <Navigation onRouteChange={this.onRouteChange}/>
-        <Carousel/>
+        <FullScreenHeader/>
         <a name="features">
           <FeatureStrip
             onRouteChange={this.onRouteChange}
@@ -65,7 +67,8 @@ class App extends Component {
         />
         <hr/>
         <a name="pricing">
-          <Pricing
+          <Jumbotron/>
+          {/* <Pricing
             image1={founderImage}
             title1="Founder Package"
             price1="$200/month"
@@ -78,7 +81,7 @@ class App extends Component {
             title3="Gold Package"
             price3="Coming Soon"
             buttonText3="Go Gold"
-          />
+          /> */}
         </a>
         <hr/><br/>
         <a name="contact">

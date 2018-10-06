@@ -1,0 +1,11 @@
+.jumbotron{
+  width: 70%;
+  margin: 4em auto;
+  text-align:left;
+  border-radius: 0;
+}
+
+.titleText{
+  text-align:left;
+  width:100%;
+}

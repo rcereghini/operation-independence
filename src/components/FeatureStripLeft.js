@@ -2,7 +2,8 @@ import React from 'react'
 import image from "../images/advertise.jpg"
 import "../styles/featureStripLeft.css"
 
-function FeatureStripLeft(props){
+
+const FeatureStripLeft = (props) => {
   return(
     <div className="container">
       <div className="row">

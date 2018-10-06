@@ -11,7 +11,6 @@ for (let i = 1; i < 51; i++)
 function Gallery(props) {
   return (
     <div className="container-fluid">
-      <img src={arrow} className="arrow" />
       <div className="video-responsive">
         <iframe
           src="https://player.vimeo.com/video/288969257?title=0&byline=0&portrait=0"

@@ -1,0 +1,9 @@
+.map {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .map {
+    width: 100%;
+  }
+}

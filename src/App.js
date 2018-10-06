@@ -7,6 +7,7 @@ import FeatureStripLeft from './components/FeatureStripLeft.js'
 import Pricing from './components/Pricing.js'
 import SignIn from './components/SignIn.js'
 import Register from './components/Register.js'
+import PropertyPage from './PropertyPage.js'
 
 import logo from "./images/OpinAdsLogo.png";
 import introductionImage from "./images/introduction.png";
@@ -16,7 +17,7 @@ import founderImage from "./images/founder.png";
 import silverImage from "./images/silver.jpg";
 import goldImage from "./images/gold.png";
 
-import "./App.css";
+import "./PropertyPage.css";
 
 class App extends Component {
   constructor(){
@@ -84,7 +85,7 @@ class App extends Component {
           <HomeForm/>
         </a>
       </div>
-      : ( this.state.route === 'signIn' ? <SignIn onRouteChange={this.onRouteChange}/> : <Register onRouteChange={this.onRouteChange}/> )}
+      : ( this.state.route === 'signIn' ? <SignIn onRouteChange={this.onRouteChange}/> : <PropertyPage onRouteChange={this.onRouteChange}/> )}
       </div>
     );
   }

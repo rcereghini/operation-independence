@@ -1,0 +1,44 @@
+.headshot {
+  float: left;
+  height: 100%;
+}
+
+.realtorCard {
+  width: 27%;
+  text-align: center;
+  color: white;
+  background-color: #003da5;
+  height: 275px;
+  margin: 25px;
+  margin-top: 50px;
+}
+
+.cardInfo {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width: 1450px) {
+  .realtorCard {
+    height: 220px;
+    margin: 10px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .realtorCard {
+    width: 80%;
+  }
+  .emailAdjust {
+    font-size: 0.6em;
+  }
+}

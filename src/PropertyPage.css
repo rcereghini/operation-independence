@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 80px;
+}
+
+.App-header {
+  background-color: #ffffff;
+  color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.mapList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mapListWrap {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.cardHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.equalLogo {
+  height: 85px;
+  margin: 0px;
+  margin-top: 25px;
+}
+
+.requestInfo {
+  margin: 30px;
+  margin-bottom: 50px;
+}
+
+.removeUnderline {
+  text-decoration-line: none;
+}
+
+@media only screen and (max-width: 1150px) {
+  .cardHolder {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .mapList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}

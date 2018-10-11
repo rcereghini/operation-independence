@@ -6,9 +6,9 @@ import '../styles/navigation.css'
 
 function Navigation({onRouteChange}){
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" id="fullScreenHeaderNav">
-      <a className="navbar-brand" href="#">
-        <img src={navLogo} width="150px" class="d-inline-block align-top" alt=""/>
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top transparent" id="fullScreenHeaderNav">
+      <a className="navbar-brand transparent" href="#">
+        <img src={navLogo} width="150px" class="d-inline-block align-top fullTransparent" alt=""/>
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

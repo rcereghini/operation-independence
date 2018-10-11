@@ -1,21 +1,40 @@
 .fullScreenDisplay{
   display:flex;
-  align-items:center;
-  justify-content:center;
-  height: 800px;
+  justify-content:flex-start;
+  align-items:flex-start;
+  padding:5em 3em;
+  height:900px;
   width: 100%;
-  font-size:2.2em;
-  background:url('../images/socialMedia.png');
+  font-size:1.8em;
+  background:url('../images/backgroundImage.png'), radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(83,168,220,1) 100%);
+  background-position: center;
 }
 
 .fullScreenCard{
-  width: 80%;
-  background:rgba(24, 24, 24, 0.8);
-  padding: 3em;
-  color:white;
+  width: 100%;
+  padding: 1.5em;
+  color: rgb(15,47,86);
 }
 
 .itemList{
   display: flex;
   justify-content:flex-start;
+}
+
+.getStartedButton{
+  padding:1em 2em;
+  margin:0em 1.5em;
+}
+
+.learnMoreButton{
+  padding:1em 2em;
+
+}
+
+.headerButtonWrap{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  width:30%;
+  margin:1.5em auto;
 }

@@ -4,12 +4,14 @@ import "../styles/fullScreenHeader.css";
 
 function FullScreenHeader(props) {
   return (
-    <div class="fullScreenDisplay" background={navLogo}>
+    <div class="fullScreenDisplay">
       <div class="fullScreenCard">
         <h1>OpinAds</h1>
         <h2>Become a Founder Today!</h2>
-        <button>Learn More</button>        <button>Learn More</button>
-
+        <div class="headerButtonWrap">
+          <button class="btn btn-success getStartedButton">Get Started Now</button>
+          <button class="btn btn-primary learnMoreButton">Learn More Now</button>
+        </div>
       </div>
     </div>
   );

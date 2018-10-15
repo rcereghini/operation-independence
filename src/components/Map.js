@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/map.css";
 
-function Map(props) {
+const Map = (props) => {
   return (
     <iframe
       src={props.mapSource}

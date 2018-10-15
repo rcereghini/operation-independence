@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/realtorCard.css";
 
-function RealtorCard(props) {
+const RealtorCard = (props) => {
   return (
     <div className="realtorCard">
       <img src={props.picName} className="headshot" />

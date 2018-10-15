@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/featureStrip.css"
 
-function FeatureStrip(props, { onRouteChange }){
+const FeatureStrip = (props, { onRouteChange }) => {
   return(
     <div className="container">
       <div className="row featureRowR">

@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/pricing.css"
 
-function Pricing(props){
+const Pricing = (props) => {
   return(
     <div className="container pricing">
       <h2>Pricing</h2>

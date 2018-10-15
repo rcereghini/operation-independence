@@ -1,40 +1,107 @@
 .fullScreenDisplay{
-  display:flex;
-  justify-content:flex-start;
-  align-items:flex-start;
-  padding:5em 3em;
-  height:900px;
+  padding:3em 3em 1em 3em;
+  margin-bottom: 1.5em;
   width: 100%;
-  font-size:1.8em;
-  background:url('../images/backgroundImage.png'), radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(83,168,220,1) 100%);
+  font-size:1.4em;
+  background:radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(83,168,220,.2) 90%);
   background-position: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+
 }
 
 .fullScreenCard{
-  width: 100%;
+  width: 90%;
+  margin: 1.5em auto;
   padding: 1.5em;
   color: rgb(15,47,86);
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 }
 
-.itemList{
-  display: flex;
-  justify-content:flex-start;
+.headerLogo{
+  width: 400px;
+}
+.fullScreenCard h1, h2{
+  margin-bottom:.7em;
+}
+
+.launchImage{
+  width: 80%;
 }
 
 .getStartedButton{
-  padding:1em 2em;
+  padding:.5em 1em;
   margin:0em 1.5em;
+  font-size:1em;
 }
 
 .learnMoreButton{
-  padding:1em 2em;
-
+  padding:.5em 1em;
+  margin:0em 1.5em;
+  font-size:1em;
 }
 
-.headerButtonWrap{
+/* .headerButtonWrap{
   display:flex;
   align-items: center;
   justify-content: space-around;
   width:30%;
   margin:1.5em auto;
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+.headerButtonWrap{
+  display:flex;
+  flex-direction:column;
+  margin: 0 auto;
+  text-align:center;
+}
+
+.getStartedButton{
+  padding:.5em 1em;
+  margin:.5em 1.5em;
+  font-size:1em;
+  width: 80%;
+}
+
+.learnMoreButton{
+  padding:.5em 1em;
+  margin:.5em 1.5em;
+  font-size:1em;
+  width:80%;
+}
+
+.headerLogo{
+  margin: 1.3em auto;
+  width: 275px;
+}
+
+.fullScreenDisplay{
+  font-size: 1em;
+  margin-top:1.7em;
+}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 576px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 993px) {
+
+
 }

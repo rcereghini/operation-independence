@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/headerBox.css";
 
-function HeaderBox(props) {
+const HeaderBox = (props) => {
   return (
     <div className="jumbotron headerBox">
       <div className="layer">

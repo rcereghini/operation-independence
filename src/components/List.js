@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/list.css";
 
-function List(props) {
+const List = (props) => {
   return (
     <table id="list">
       <tr>

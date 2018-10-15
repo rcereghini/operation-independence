@@ -1,7 +1,7 @@
   import React from "react";
   import "../styles/jumbotron.css";
 
-  function Jumbotron(props) {
+  const Jumbotron = (props) => {
     return (
       <div class="jumbotron">
         <div>

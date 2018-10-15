@@ -8,7 +8,7 @@ for (let i = 1; i < 51; i++)
     "https://rcereghini.github.io/assets/galleryImages/gallery" + i + ".jpg"
   );
 
-function Gallery(props) {
+const Gallery = (props) => {
   return (
     <div className="container-fluid">
       <div className="video-responsive">

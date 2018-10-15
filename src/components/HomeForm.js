@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/homeForm.css'
 
-function HomeForm(props){
+const HomeForm = (props) => {
     return(
       <div className="formWrap">
         <form name="homeScreen" netlify>

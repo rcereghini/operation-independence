@@ -5,7 +5,7 @@ import sliderImageThree from "../images/facebookPhone.png";
 import '../styles/carousel.css'
 
 
-function Carousel(props){
+const Carousel = (props) => {
   return (
     <div id="carouselExampleIndicators" className="carousel slide fixedNavPadding" data-ride="carousel">
       <ol className="carousel-indicators">

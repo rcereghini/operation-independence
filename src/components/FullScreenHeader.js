@@ -1,18 +1,20 @@
 import React from "react";
-import navLogo from "../images/OpinAdsLogo.png";
+import launchImage from "../images/startUp.png";
+import logo from "../images/OpinAdsLogo.png";
 import "../styles/fullScreenHeader.css";
 
-function FullScreenHeader(props) {
+const FullScreenHeader = (props) => {
   return (
-    <div class="fullScreenDisplay">
-      <div class="fullScreenCard">
-        <h1>OpinAds</h1>
-        <h2>Become a Founder Today!</h2>
-        <div class="headerButtonWrap">
-          <button class="btn btn-success getStartedButton">Get Started Now</button>
-          <button class="btn btn-primary learnMoreButton">Learn More Now</button>
+    <div className="fullScreenDisplay">
+      <div className="fullScreenCard">
+        <img src={logo} className="headerLogo"/>
+        <h2>{props.headerSubtitle}</h2>
+        <div className="headerButtonWrap">
+          <button className="btn btn-success getStartedButton">Get Started</button>
+          <button className="btn btn-primary learnMoreButton">Learn More</button>
         </div>
       </div>
+      <div ><img className="launchImage" src={launchImage}/></div>
     </div>
   );
 }

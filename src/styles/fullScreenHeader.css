@@ -54,6 +54,7 @@
 .headerButtonWrap{
   display:flex;
   flex-direction:column;
+  align-items: center;
   margin: 0 auto;
   text-align:center;
 }
@@ -74,11 +75,11 @@
 
 .headerLogo{
   margin: 1.3em auto;
-  width: 275px;
+  width: 200px;
 }
 
 .fullScreenDisplay{
-  font-size: 1em;
+  font-size: .8em;
   margin-top:1.7em;
 }
 

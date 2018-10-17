@@ -36,7 +36,7 @@
 }
 .headerLogo{
   width: 60%;
-  margin: 2em auto;
+  margin: 2em auto 1em;
 }
 
 .getStartedButton{
@@ -58,8 +58,8 @@
 
 .fullScreenHeader_mainTitle{
   font-size: 1.8em;
-  margin: 1em auto 2em;
-  font-weight: 800;
+  margin: 0em auto 2em;
+  font-weight: 500;
   color: rgba(45,112,181,1);
 }
 
@@ -96,8 +96,8 @@
 }
 
 .headerLogo{
-  margin: 1.3em auto;
-  width: 100%;
+  margin: 1em auto 0em;
+  width: 80%;
 }
 
 .fullScreenDisplay{
@@ -110,7 +110,7 @@
 }
 
 .infoButton{
-  width:90%;
+  width:85%;
   max-width: 95%;
 }
 

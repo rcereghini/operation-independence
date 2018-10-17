@@ -1,5 +1,4 @@
 import React from 'react'
-import image from "../images/advertise.jpg"
 import "../styles/featureStripLeft.css"
 
 

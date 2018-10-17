@@ -12,14 +12,6 @@
   text-align:right;
 }
 
-.stripImageL{
-  text-align:center;
-  margin: 3em auto;
-  width:100%;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-
-}
-
 .featureStripButtonL{
   width: 50%;
   margin: 15px auto;
@@ -62,13 +54,6 @@ p{
     margin-top:0px;
   }
 
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-    width:300px;
-    border-radius: 50%;
-  }
-
   .imageWrap{
     text-align:center;
   }
@@ -80,13 +65,6 @@ p{
 @media only screen and (max-width: 576px) {
   .featureRowR{
     flex-direction: column-reverse;
-  }
-
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-    width:200px;
-    border-radius:50%;
   }
 
   .featureStripButtonL{

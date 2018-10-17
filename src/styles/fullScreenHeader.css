@@ -3,14 +3,15 @@
   margin-bottom: 1.5em;
   width: 100%;
   font-size:1.4em;
-  background:radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(83,168,220,.2) 90%);
+  /* background:radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(83,168,220,.2) 90%); */
+  background: radial-gradient(circle, rgba(195,232,255,1) 0%, rgba(83,179,220,1) 100%);
   background-position: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 
 }
 
 .fullScreenCard{
-  width: 90%;
+  width: 45%;
   margin: 1.5em auto;
   padding: 1.5em;
   color: rgb(15,47,86);
@@ -18,9 +19,6 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 }
 
-.headerLogo{
-  width: 400px;
-}
 .fullScreenCard h1, h2{
   margin-bottom:.7em;
 }
@@ -29,16 +27,40 @@
   width: 80%;
 }
 
+.infoButton{
+  padding:.3em .7em;
+  font-size:1.3em;
+  font-weight: 800;
+  max-width: 40%;
+  margin: 0 auto;
+}
+.headerLogo{
+  width: 60%;
+  margin: 2em auto;
+}
+
 .getStartedButton{
-  padding:.5em 1em;
-  margin:0em 1.5em;
-  font-size:1em;
+  /* background-color:rgba(237,185,98); */
+  background: radial-gradient(circle, rgba(247,209,144,1) 0%, rgba(237,185,98,1) 100%);
+  border: 0px;
+  /* border:3px solid rgba(83, 168, 220); */
+  color: white;
+}
+
+.getStartedButton:hover{
+  box-shadow: 0px 0px 15px rgba(237, 234, 98,1);
+
 }
 
 .learnMoreButton{
-  padding:.5em 1em;
-  margin:0em 1.5em;
-  font-size:1em;
+  background: radial-gradient(circle, rgba(85,143,204,1) 0%, rgba(45,112,181,1) 100%);
+}
+
+.fullScreenHeader_mainTitle{
+  font-size: 1.8em;
+  margin: 1em auto 2em;
+  font-weight: 800;
+  color: rgba(45,112,181,1);
 }
 
 /* .headerButtonWrap{
@@ -75,12 +97,31 @@
 
 .headerLogo{
   margin: 1.3em auto;
-  width: 200px;
+  width: 100%;
 }
 
 .fullScreenDisplay{
   font-size: .8em;
   margin-top:1.7em;
+}
+
+.fullScreenLogo{
+  width: 40%;
+}
+
+.infoButton{
+  width:90%;
+  max-width: 95%;
+}
+
+.fullScreenHeader_mainTitle{
+  font-size: 2.5em;
+  margin: .7em auto 1em;
+}
+
+.fullScreenCard{
+  width:90%;
+  margin-top:3em;
 }
 
 }

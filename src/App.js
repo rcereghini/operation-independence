@@ -40,7 +40,7 @@ class App extends Component {
       { this.state.route === 'home'
       ? <div>
         <Navigation onRouteChange={this.onRouteChange}/>
-        <FullScreenHeader headerTitle="Opin Ads" headerSubtitle="Launch your career today!"/> 
+        <FullScreenHeader headerTitle="Opin Ads" headerMaintitle="Launch your business today!"/>
         <a name="features">
           <FeatureStrip
             onRouteChange={this.onRouteChange}

@@ -8,10 +8,10 @@ const FullScreenHeader = (props) => {
     <div className="fullScreenDisplay">
       <div className="fullScreenCard">
         <img src={logo} className="headerLogo"/>
-        <h2>{props.headerSubtitle}</h2>
-        <div className="headerButtonWrap">
-          <button className="btn btn-success getStartedButton">Get Started</button>
-          <button className="btn btn-primary learnMoreButton">Learn More</button>
+        <h2 className="fullScreenHeader_mainTitle">{props.headerMaintitle}</h2>
+        <div className="headerButtonWrap row">
+          <button className="btn btn-primary infoButton learnMoreButton">Learn More</button>
+          <button className="btn btn-success infoButton getStartedButton">Take Off!</button>
         </div>
       </div>
       <div ><img className="launchImage" src={launchImage}/></div>

@@ -25,7 +25,7 @@ const HomeForm = (props) => {
             <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
             <label className="form-check-label" for="exampleCheck1">Subscribe to Newsletter</label>
           </div><div className="formSubmitButtonWrap">
-          <button type="submit" className="btn btn-primary formSubmitButton">Submit</button>
+          <button type="submit" className="btn btn-primary formSubmitButton learnMoreButton">Submit</button>
         </div>
         </form>
       </div>

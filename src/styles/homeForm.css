@@ -37,6 +37,7 @@
 @media only screen and (max-width: 768px) {
   .formWrap{
     width:90%;
+    padding:2.7em;
   }
 
   .formSubmitButton{

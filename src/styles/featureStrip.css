@@ -24,6 +24,7 @@
   margin: 15px auto;
   font-size:1.5em;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  background: radial-gradient(circle, rgba(85,143,204,1) 0%, rgba(45,112,181,1) 100%);
 
 }
 

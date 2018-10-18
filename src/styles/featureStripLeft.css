@@ -13,12 +13,14 @@
 }
 
 .featureStripButtonL{
-  width: 50%;
   margin: 15px auto;
   font-size:1.5em;
+  border:black;
+  width: 80%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  background: radial-gradient(circle, rgba(85,143,204,1) 0%, rgba(45,112,181,1) 100%);
-
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));
 }
 
 h2{

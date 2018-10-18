@@ -4,7 +4,11 @@
   width: 100%;
   font-size:1.4em;
   /* background:radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(83,168,220,.2) 90%); */
-  background: radial-gradient(circle, rgba(195,232,255,1) 0%, rgba(83,179,220,1) 100%);
+  /* background: radial-gradient(circle, rgba(195,232,255,1) 0%, rgba(83,179,220,1) 100%); */
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-position: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
 
@@ -15,8 +19,9 @@
   margin: 1.5em auto;
   padding: 1.5em;
   color: rgb(15,47,86);
-  background-color: white;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  background:white;
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 .fullScreenCard h1, h2{
@@ -31,8 +36,11 @@
   padding:.3em .7em;
   font-size:1.3em;
   font-weight: 800;
-  max-width: 40%;
+  width:45%;
+  max-width: 45%;
   margin: 0 auto;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  border: 0px;
 }
 .headerLogo{
   width: 60%;
@@ -53,7 +61,10 @@
 }
 
 .learnMoreButton{
-  background: radial-gradient(circle, rgba(85,143,204,1) 0%, rgba(45,112,181,1) 100%);
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border:black;
 }
 
 .fullScreenHeader_mainTitle{
@@ -128,22 +139,34 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
-
+.fullScreenCard{
+    width:80%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
+  .fullScreenCard{
+      width:70%;
+    }
 
+  .infoButton{
+    width:80%;
+    max-width:80%;
+    margin:.5em auto;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-
-
+  .fullScreenCard{
+      width:70%;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
-
-
+  .fullScreenCard{
+      width:70%;
+    }
 }

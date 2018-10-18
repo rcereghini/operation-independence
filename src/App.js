@@ -61,11 +61,9 @@ class App extends Component {
           image={launchFeatureImage}
           buttonFunction="() => onRouteChange('register')"
         />
-        <hr/>
         <a name="pricing">
           <Jumbotron/>
         </a>
-        <hr/><br/>
         <a name="contact">
           <HomeForm/>
         </a>

@@ -3,6 +3,7 @@ import '../styles/homeForm.css'
 
 const HomeForm = (props) => {
     return(
+      <div className="formFullWrap">
       <div className="formWrap">
         <form name="homeScreen" netlify>
           <div className="homeFormTextWrap">
@@ -29,6 +30,7 @@ const HomeForm = (props) => {
         </div>
         </form>
       </div>
+    </div>
     )
 }
 

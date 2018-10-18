@@ -1,6 +1,6 @@
 .stripWrap{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
   padding: 1.5em;
   margin:2em;
   margin-bottom:2.5em;
@@ -14,19 +14,23 @@
 
 .stripImage{
   text-align:center;
-  margin: 3.3em auto;
+  margin: 3.3em ;
   width:100%;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  background: radial-gradient(circle, rgba(195,232,255,.6) 60%, rgba(83,179,220,.6) 100%);
-
+  box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.46);
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));
 }
 
 .featureStripButton{
   margin: 15px auto;
   font-size:1.5em;
+  border:black;
+  width:80%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  background: radial-gradient(circle, rgba(85,143,204,1) 0%, rgba(45,112,181,1) 100%);
-
+  background: #757F9A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .9));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .9));
 }
 
 .fullCard{
@@ -46,18 +50,6 @@ p{
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 576px) {
-  .featureRowR{
-    flex-direction: column-reverse;
-  }
-
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-    width:400px;
-  }
-
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
@@ -68,12 +60,16 @@ p{
   .stripImage{
     align-items:center;
     margin:2em auto;
-    width:200px;
-  }
+width:88%;
+max-width: 88%; }
 
   .featureStripButton{
     width:90%;
   }
+}
+
+.captionWrap{
+  width:88%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

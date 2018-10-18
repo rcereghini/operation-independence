@@ -4,6 +4,13 @@
   padding: 1.5em;
   margin:2em;
   margin-bottom:2.5em;
+
+}
+
+.featureStrip{
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.46);
+  margin: 1.7em auto;
 }
 
 .captionWrap{

@@ -4,7 +4,7 @@ import "../styles/featureStripLeft.css"
 
 const FeatureStripLeft = (props) => {
   return(
-    <div className="container">
+    <div className="container featureStrip">
       <div className="row">
         <div className="col-sm-12 col-md-6 imageWrap">
           <img className="stripImage" src={props.image}/>
@@ -12,7 +12,7 @@ const FeatureStripLeft = (props) => {
         <div className="col-sm-12 col-md-6 captionWrap">
           <h2>{props.headline}</h2>
           <p>{props.paragraph}</p>
-          <button type="button" className="btn btn-primary featureStripButtonL">{props.buttonText}</button>
+          <form className="formButtonWrap" action="/example"><button type="submit" className="btn btn-primary featureStripButtonL">{props.buttonText}</button></form>
         </div>
       </div>
     </div>

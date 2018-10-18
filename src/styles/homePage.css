@@ -1,0 +1,9 @@
+.homePage{
+  background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  text-align:center;
+}
+
+.headerLogo{
+  width: 40%;
+  margin: 30px 30%;
+}

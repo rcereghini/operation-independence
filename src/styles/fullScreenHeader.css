@@ -3,15 +3,12 @@
   margin-bottom: 1.5em;
   width: 100%;
   font-size:1.4em;
-  /* background:radial-gradient(circle, rgba(255,255,255,1) 40%, rgba(83,168,220,.2) 90%); */
-  /* background: radial-gradient(circle, rgba(195,232,255,1) 0%, rgba(83,179,220,1) 100%); */
   background: #757F9A;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   background-position: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-
+  text-align:center;
 }
 
 .fullScreenCard{
@@ -22,6 +19,10 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
   background:white;
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.formButtonWrap{
+  width:100%;
 }
 
 .fullScreenCard h1, h2{
@@ -42,8 +43,9 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
   border: 0px;
 }
+
 .headerLogo{
-  width: 60%;
+  width: 80%;
   margin: 2em auto 1em;
 }
 
@@ -67,20 +69,17 @@
   border:black;
 }
 
+.fullScreenCardLogo{
+  width: 70%;
+  margin: 1em;
+}
+
 .fullScreenHeader_mainTitle{
   font-size: 1.8em;
-  margin: 0em auto 2em;
+  margin: 0em auto 1em;
   font-weight: 500;
   color: rgba(45,112,181,1);
 }
-
-/* .headerButtonWrap{
-  display:flex;
-  align-items: center;
-  justify-content: space-around;
-  width:30%;
-  margin:1.5em auto;
-} */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
@@ -106,7 +105,7 @@
   width:80%;
 }
 
-.headerLogo{
+.fullScreenCardLogo{
   margin: 1em auto 0em;
   width: 80%;
 }
@@ -115,10 +114,6 @@
   font-size: .8em;
   margin-top:1.7em;
   padding:3em 0em;
-}
-
-.fullScreenLogo{
-  width: 40%;
 }
 
 .infoButton{
@@ -135,7 +130,7 @@
   width:100%;
   max-width:100%;
   margin: 3em auto;
-  
+
 }
 
 }

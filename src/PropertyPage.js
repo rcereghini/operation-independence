@@ -5,9 +5,12 @@ import Gallery from "./components/Gallery.js";
 import RealtorCard from "./components/RealtorCard.js";
 import List from "./components/List.js";
 import Map from "./components/Map.js";
+import Navigation from './components/Navigation.js'
+
 import scottPic from "./images/cookS.jpg";
 import justinPic from "./images/cookJ.jpg";
 import realtorEqualOpMLS from "./images/realtorEqualOpMLS.png";
+
 import "./App.css";
 
 const realtyName = "RE/MAX SOLUTIONS";
@@ -17,9 +20,7 @@ class PropertyPage extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={realtyLogo} className="App-logo" alt="logo" />
-        </header>
+      <Navigation/>
         <HeaderBox
           homePrice="$889,900"
           streetAddress="24029 S 201st Place"

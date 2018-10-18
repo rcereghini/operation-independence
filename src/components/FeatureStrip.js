@@ -3,7 +3,7 @@ import "../styles/featureStrip.css"
 
 const FeatureStrip = (props, { onRouteChange }) => {
   return(
-    <div className="container">
+    <div className="container featureStrip">
       <div className="row featureRowR">
         <div className="col-sm-12 col-md-6 captionWrap">
           <h2>{props.headline}</h2>

@@ -1,12 +1,17 @@
 import React from 'react'
 import '../styles/register.css'
 
+import Navigation from './Navigation.js'
+
+
 import logo from "../images/OpinAdsLogo.png";
 
 const Register = ({ onRouteChange }) => {
   return (
+    <div>
+  <Navigation/>
     <form className="signInForm">
-      <img src={logo} className="logo" onClick={() => onRouteChange('home')}/>
+      <a href="/home"><img src={logo} className="logo"/></a>
       <h2 className="display-5 getStarted">Get Started!</h2>
       <div className="form-group">
         <label for="name">Name</label>
@@ -21,13 +26,9 @@ const Register = ({ onRouteChange }) => {
         <label for="exampleInputPassword1">Password</label>
         <input type="password" className="form-control inputWidthTemp" id="exampleInputPassword1" placeholder="Password"/>
       </div>
-      <input
-        onClick={() => onRouteChange('home')}
-        type="submit"
-        className="btn btn-primary inputWidthTemp signInButton"
-        value="Begin Operation Independence"
-      />
+      <form className="formButtonWrap" action="/signin"><button type="submit" className="btn btn-primary featureStripButtonL">Already have an account?</button></form>
     </form>
+  </div>
   )
 }
 

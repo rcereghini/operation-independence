@@ -1,12 +1,16 @@
 import React from 'react'
 import '../styles/signIn.css'
 
+import Navigation from '../components/Navigation.js'
+
 import logo from "../images/OpinAdsLogo.png";
 
 const SignIn = ({ onRouteChange }) => {
   return (
+  <div>
+    <Navigation/>
     <form className="signInForm">
-      <img src={logo} className="logo" onClick={() => onRouteChange('home')}/>
+      <a href="/home"><img src={logo} className="logo"/></a>
       <div className="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" className="form-control inputWidthTemp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
@@ -22,10 +26,9 @@ const SignIn = ({ onRouteChange }) => {
         className="btn btn-primary inputWidthTemp signInButton"
         value="Sign In"
       />
-      <div>
-        <p onClick={() => onRouteChange('register')} className="btn inputWidthTemp">Register</p>
-      </div>
+      <form className="formButtonWrap" action="/home"><button type="submit" className="btn btn-primary featureStripButtonL">Register Now</button></form>
     </form>
+  </div>
   )
 }
 

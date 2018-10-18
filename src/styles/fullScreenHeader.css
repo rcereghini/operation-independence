@@ -114,6 +114,7 @@
 .fullScreenDisplay{
   font-size: .8em;
   margin-top:1.7em;
+  padding:3em 0em;
 }
 
 .fullScreenLogo{
@@ -131,8 +132,10 @@
 }
 
 .fullScreenCard{
-  width:90%;
-  margin-top:3em;
+  width:100%;
+  max-width:100%;
+  margin: 3em auto;
+  
 }
 
 }

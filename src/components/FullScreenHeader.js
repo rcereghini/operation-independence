@@ -7,8 +7,11 @@ const FullScreenHeader = props => {
   return (
     <div className="fullScreenDisplay">
       <div className="fullScreenCard">
-        <img src={logo} className="fullScreenCardLogo" />
-        <h2 className="fullScreenHeader_mainTitle">{props.headerMaintitle}</h2>
+        {/* <img src={logo} className="fullScreenCardLogo" /> */}
+        <h2 className="fullScreenHeader__main-title">
+          {props.headerMaintitle}
+        </h2>
+        <p className="fullScreenHeader__sub-title">{props.headerSubText}</p>
         <div className="headerButtonWrap row">
           <form className="formButtonWrap" action="/">
             <button

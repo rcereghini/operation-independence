@@ -1,66 +1,68 @@
-.jumboWrap{
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-top:2em;
-  padding-bottom:2em;
-  margin-top:1em;
+.jumboWrap {
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 1em;
 }
 
-.jumbotron{
+.jumbotron {
   width: 70%;
   margin: 4em auto;
-  text-align:center;
+  text-align: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-
+  border-radius: 0px;
 }
 
-.titleText{
-  text-align:center;
-  width:100%;
-  font-size:3em;
-  margin-bottom: .5em;
+.titleText {
+  text-align: center;
+  width: 100%;
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
-.subTitleText{
-  text-align:center;
+.subTitleText {
+  text-align: center;
 }
 
-.jumbotronDetails{
+.jumbotronDetails {
   margin: 2em auto;
   line-height: 2em;
   padding: 0em 2em;
-  text-align:left;
+  text-align: left;
 }
 
-.learnMoreButton{
-  width:88%;
+.learnMoreButton {
+  width: 88%;
   margin: 0 auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
-  .jumbotron{
-    width:85%;
+  .jumbotron {
+    width: 88%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
-
-
 }

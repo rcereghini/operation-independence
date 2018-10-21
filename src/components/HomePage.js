@@ -20,7 +20,9 @@ class App extends Component {
         <Navigation onRouteChange={this.onRouteChange} />
         <FullScreenHeader
           headerTitle="Opin Ads"
-          headerMaintitle="Launch your business today!"
+          headerMaintitle="Increase your business today!"
+          // headerMaintitle="Drive more business today!"
+          headerSubText="with targeted Facebook advertisements to increase conversations and conversions."
         />
         <a name="features">
           <FeatureStrip

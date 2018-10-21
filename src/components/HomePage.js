@@ -5,15 +5,12 @@ import HomeForm from "../components/HomeForm.js";
 import FeatureStrip from "../components/FeatureStrip.js";
 import FeatureStripLeft from "../components/FeatureStripLeft.js";
 import SignIn from "../components/SignIn.js";
-// import PropertyPage from "./singlePropertyWebsite/PropertyPage.js";
 import Jumbotron from "../components/Jumbotron.js";
 import FullScreenHeader from "../components/FullScreenHeader.js";
 
-import logo from "../images/OpinAdsLogo.png";
 import calculateImage from "../images/fullScreenHeader_calculate.png";
 import launchFeatureImage from "../images/fullScreenHeader_launch.png";
 import searchBarImage from "../images/fullScreenHeader_searchBar.png";
-// import "./singlePropertyWebsite/styles/PropertyPage.css";
 import "../styles/homePage.css";
 
 class App extends Component {

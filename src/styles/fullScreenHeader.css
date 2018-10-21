@@ -1,170 +1,188 @@
-.fullScreenDisplay{
-  padding:3em 3em 1em 3em;
+.fullScreenDisplay {
+  padding: 3em 3em 1em 3em;
   margin-bottom: 1.5em;
   width: 100%;
-  font-size:1.4em;
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 1.4em;
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: center;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  text-align:center;
+  text-align: center;
 }
 
-.fullScreenCard{
+.fullScreenCard {
   width: 45%;
   margin: 1.5em auto;
   padding: 1.5em;
-  color: rgb(15,47,86);
+  color: rgb(15, 47, 86);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  background:white;
+  background: white;
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-.formButtonWrap{
-  width:100%;
+.formButtonWrap {
+  width: 100%;
 }
 
-.fullScreenCard h1, h2{
-  margin-bottom:.7em;
+.fullScreenCard h1,
+h2 {
+  margin-bottom: 0.7em;
 }
 
-.launchImage{
+.launchImage {
   width: 90%;
 }
 
-.infoButton{
-  padding:.3em .7em;
-  font-size:1.3em;
+.infoButton {
+  padding: 0.3em 0.7em;
+  font-size: 1.3em;
   font-weight: 800;
-  width:45%;
+  width: 45%;
   max-width: 45%;
   margin: 0 auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
   border: 0px;
 }
 
-.headerLogo{
+.headerLogo {
   width: 80%;
   margin: 2em auto 1em;
 }
 
-.getStartedButton{
+.getStartedButton {
   /* background-color:rgba(237,185,98); */
-  background: radial-gradient(circle, rgba(247,209,144,1) 0%, rgba(237,185,98,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(247, 209, 144, 1) 0%,
+    rgba(237, 185, 98, 1) 100%
+  );
   border: 0px;
   /* border:3px solid rgba(83, 168, 220); */
   color: white;
 }
 
-.getStartedButton:hover{
-  box-shadow: 0px 0px 15px rgba(237, 234, 98,1);
-
+.getStartedButton:hover {
+  box-shadow: 0px 0px 15px rgba(237, 234, 98, 1);
 }
 
-.learnMoreButton{
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  border:black;
+.learnMoreButton {
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: black;
 }
 
-.fullScreenCardLogo{
+.fullScreenCardLogo {
   width: 70%;
   margin: 1em;
 }
 
-.fullScreenHeader_mainTitle{
+.fullScreenHeader_mainTitle {
   font-size: 1.8em;
   margin: 0em auto 1em;
-  font-weight: 500;
-  color: rgba(45,112,181,1);
+  font-weight: 800;
+  color: rgba(45, 112, 181, 1);
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-.headerButtonWrap{
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-  margin: 0 auto;
-  text-align:center;
-}
+  .headerButtonWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.getStartedButton{
-  padding:.5em 1em;
-  margin:.5em 1.5em;
-  font-size:1em;
-  width: 80%;
-}
+  .getStartedButton {
+    padding: 0.5em 1em;
+    margin: 0.5em 1.5em;
+    font-size: 1em;
+    width: 80%;
+  }
 
-.learnMoreButton{
-  padding:.5em 1em;
-  margin:.5em 1.5em;
-  font-size:1em;
-  width:80%;
-}
+  .learnMoreButton {
+    padding: 0.5em 1em;
+    margin: 0.5em 1.5em;
+    font-size: 1em;
+    width: 80%;
+  }
 
-.fullScreenCardLogo{
-  margin: 1em auto 0em;
-  width: 80%;
-}
+  .fullScreenCardLogo {
+    margin: 1em auto 0em;
+    width: 80%;
+  }
 
-.fullScreenDisplay{
-  font-size: .8em;
-  margin-top:1.7em;
-  padding:3em 0em;
-}
+  .fullScreenDisplay {
+    font-size: 0.8em;
+    margin-top: 1.7em;
+    padding: 3em 0em;
+  }
 
-.infoButton{
-  width:85%;
-  max-width: 95%;
-}
+  .infoButton {
+    width: 85%;
+    max-width: 95%;
+  }
 
-.fullScreenHeader_mainTitle{
-  font-size: 2.5em;
-  margin: .7em auto 1em;
-}
+  .fullScreenHeader_mainTitle {
+    font-size: 2.5em;
+    margin: 0.7em auto 1em;
+  }
 
-.fullScreenCard{
-  width:100%;
-  max-width:100%;
-  margin: 3em auto;
-
-}
-
+  .fullScreenCard {
+    width: 100%;
+    max-width: 100%;
+    margin: 3em auto;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
-.fullScreenCard{
-    width:80%;
+  .fullScreenCard {
+    width: 80%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .fullScreenCard{
-      width:70%;
-    }
+  .fullScreenCard {
+    width: 70%;
+  }
 
-  .infoButton{
-    width:80%;
-    max-width:80%;
-    margin:.5em auto;
+  .infoButton {
+    width: 80%;
+    max-width: 80%;
+    margin: 0.5em auto;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-  .fullScreenCard{
-      width:70%;
-    }
+  .fullScreenCard {
+    width: 70%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
-  .fullScreenCard{
-      width:70%;
-    }
+  .fullScreenCard {
+    width: 70%;
+  }
 }

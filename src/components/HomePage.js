@@ -1,13 +1,10 @@
 import React, { Fragment, Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Navigation from "../components/Navigation.js";
-import Carousel from "../components/Carousel.js";
 import HomeForm from "../components/HomeForm.js";
 import FeatureStrip from "../components/FeatureStrip.js";
 import FeatureStripLeft from "../components/FeatureStripLeft.js";
-import Pricing from "../components/Pricing.js";
 import SignIn from "../components/SignIn.js";
-import Register from "../components/Register.js";
 import PropertyPage from "../PropertyPage.js";
 import Jumbotron from "../components/Jumbotron.js";
 import FullScreenHeader from "../components/FullScreenHeader.js";
@@ -50,7 +47,7 @@ class App extends Component {
           paragraph="Don't worry! We'll get you setup with everything you need to get Facebook ads up and running."
           buttonText="Get Started Now!"
           image={launchFeatureImage}
-          buttonFunction="() => onRouteChange('register')"
+          buttonFunction="() => onRouteChange('signIn')"
         />
         <a name="pricing">
           <Jumbotron />

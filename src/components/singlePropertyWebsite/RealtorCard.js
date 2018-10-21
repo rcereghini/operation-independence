@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/realtorCard.css";
+import "./styles/realtorCard.css";
 
-const RealtorCard = (props) => {
+const RealtorCard = props => {
   return (
     <div className="realtorCard">
       <img src={props.picName} className="headshot" />
@@ -18,6 +18,6 @@ const RealtorCard = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default RealtorCard;

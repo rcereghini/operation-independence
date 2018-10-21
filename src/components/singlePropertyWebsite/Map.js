@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/map.css";
+import "./styles/map.css";
 
-const Map = (props) => {
+const Map = props => {
   return (
     <iframe
       src={props.mapSource}
@@ -12,6 +12,6 @@ const Map = (props) => {
       allowfullscreen
     />
   );
-}
+};
 
 export default Map;

@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/list.css";
+import "./styles/list.css";
 
-const List = (props) => {
+const List = props => {
   return (
     <table id="list">
       <tr>
@@ -42,6 +42,6 @@ const List = (props) => {
       </tr>
     </table>
   );
-}
+};
 
 export default List;

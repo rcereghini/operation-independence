@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/gallery.css";
-import arrow from "../images/arrow.jpg";
+import "./styles/gallery.css";
+import arrow from "./galleryImages/arrow.jpg";
 
 const IMAGES = [];
 for (let i = 1; i < 51; i++)
@@ -8,7 +8,7 @@ for (let i = 1; i < 51; i++)
     "https://rcereghini.github.io/assets/galleryImages/gallery" + i + ".jpg"
   );
 
-const Gallery = (props) => {
+const Gallery = props => {
   return (
     <div className="container-fluid">
       <div className="video-responsive">
@@ -30,6 +30,6 @@ const Gallery = (props) => {
       ))}
     </div>
   );
-}
+};
 
 export default Gallery;

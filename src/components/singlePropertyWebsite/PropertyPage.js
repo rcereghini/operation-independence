@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import realtyLogo from "./images/remaxLogo.jpg";
-import HeaderBox from "./components/HeaderBox.js";
-import Gallery from "./components/Gallery.js";
-import RealtorCard from "./components/RealtorCard.js";
-import List from "./components/List.js";
-import Map from "./components/Map.js";
-import Navigation from './components/Navigation.js'
+import realtyLogo from "./galleryImages/remaxLogo.jpg";
+import HeaderBox from "./HeaderBox.js";
+import Gallery from "./Gallery.js";
+import RealtorCard from "./RealtorCard.js";
+import List from "./List.js";
+import Map from "./Map.js";
+import Navigation from "../Navigation.js";
 
-import scottPic from "./images/cookS.jpg";
-import justinPic from "./images/cookJ.jpg";
-import realtorEqualOpMLS from "./images/realtorEqualOpMLS.png";
+import scottPic from "./galleryImages/cookS.jpg";
+import justinPic from "./galleryImages/cookJ.jpg";
+import realtorEqualOpMLS from "./galleryImages/realtorEqualOpMLS.png";
 
-import "./App.css";
+import "../../App.css";
 
 const realtyName = "RE/MAX SOLUTIONS";
 const realtyAddress = "1425 S Higley Rd, Ste #104, Gilbert, AZ 85296";
@@ -20,7 +20,7 @@ class PropertyPage extends Component {
   render() {
     return (
       <div className="App">
-      <Navigation/>
+        <Navigation />
         <HeaderBox
           homePrice="$889,900"
           streetAddress="24029 S 201st Place"

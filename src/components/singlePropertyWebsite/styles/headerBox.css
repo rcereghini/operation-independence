@@ -1,6 +1,6 @@
 .headerBox {
   width: 100%;
-  background: url("../images/home1.jpg"), rgba(0, 0, 0, 0.6);
+  background: url("../galleryImages/home1.jpg"), rgba(0, 0, 0, 0.6);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;

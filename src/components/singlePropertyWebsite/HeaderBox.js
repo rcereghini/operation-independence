@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/headerBox.css";
+import "./styles/headerBox.css";
 
-const HeaderBox = (props) => {
+const HeaderBox = props => {
   return (
     <div className="jumbotron headerBox">
       <div className="layer">
@@ -46,6 +46,6 @@ const HeaderBox = (props) => {
       </div>
     </div>
   );
-}
+};
 
 export default HeaderBox;

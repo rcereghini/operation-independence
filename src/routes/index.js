@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import HomePage from "../components/HomePage";
 import SignIn from "../components/SignIn";
-import Register from "../components/Register";
-import PropertyPage from "../PropertyPage";
+// import Register from "../components/Register";
+import PropertyPage from "../components/singlePropertyWebsite/PropertyPage";
 
 export default () => (
   <BrowserRouter>

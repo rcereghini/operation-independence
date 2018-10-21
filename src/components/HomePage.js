@@ -1,16 +1,16 @@
 import React, { Fragment, Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Navigation from '../components/Navigation.js'
-import Carousel from '../components/Carousel.js'
-import HomeForm from '../components/HomeForm.js'
-import FeatureStrip from '../components/FeatureStrip.js'
-import FeatureStripLeft from '../components/FeatureStripLeft.js'
-import Pricing from '../components/Pricing.js'
-import SignIn from '../components/SignIn.js'
-import Register from '../components/Register.js'
-import PropertyPage from '../PropertyPage.js'
-import Jumbotron from '../components/Jumbotron.js'
-import FullScreenHeader from '../components/FullScreenHeader.js'
+import Navigation from "../components/Navigation.js";
+import Carousel from "../components/Carousel.js";
+import HomeForm from "../components/HomeForm.js";
+import FeatureStrip from "../components/FeatureStrip.js";
+import FeatureStripLeft from "../components/FeatureStripLeft.js";
+import Pricing from "../components/Pricing.js";
+import SignIn from "../components/SignIn.js";
+import Register from "../components/Register.js";
+import PropertyPage from "../PropertyPage.js";
+import Jumbotron from "../components/Jumbotron.js";
+import FullScreenHeader from "../components/FullScreenHeader.js";
 
 import logo from "../images/OpinAdsLogo.png";
 import calculateImage from "../images/fullScreenHeader_calculate.png";
@@ -20,12 +20,14 @@ import "../PropertyPage.css";
 import "../styles/homePage.css";
 
 class App extends Component {
-
   render() {
     return (
       <Fragment className="homePage">
-        <Navigation onRouteChange={this.onRouteChange}/>
-        <FullScreenHeader headerTitle="Opin Ads" headerMaintitle="Launch your business today!"/>
+        <Navigation onRouteChange={this.onRouteChange} />
+        <FullScreenHeader
+          headerTitle="Opin Ads"
+          headerMaintitle="Launch your business today!"
+        />
         <a name="features">
           <FeatureStrip
             onRouteChange={this.onRouteChange}
@@ -51,12 +53,12 @@ class App extends Component {
           buttonFunction="() => onRouteChange('register')"
         />
         <a name="pricing">
-          <Jumbotron/>
+          <Jumbotron />
         </a>
         <a name="contact">
-          <HomeForm/>
+          <HomeForm />
         </a>
-    </Fragment>
+      </Fragment>
     );
   }
 }

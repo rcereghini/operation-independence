@@ -1,35 +1,52 @@
-import React from 'react'
-import '../styles/signIn.css'
-
-import Navigation from '../components/Navigation.js'
-
+import React, { Fragment, Component } from "react";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+import firebase from "firebase";
+import Navigation from "../components/Navigation.js";
+import "../styles/signIn.css";
 import logo from "../images/OpinAdsLogo.png";
 
-const SignIn = ({ onRouteChange }) => {
-  return (
-  <div>
-    <Navigation/>
-    <form className="signInForm">
-      <a href="/home"><img src={logo} className="logo"/></a>
-      <div className="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" className="form-control inputWidthTemp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
-        <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
-      </div>
-      <div className="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" className="form-control inputWidthTemp" id="exampleInputPassword1" placeholder="Password"/>
-      </div>
-      <input
-        onClick={() => onRouteChange('home')}
-        type="submit"
-        className="btn btn-primary inputWidthTemp signInButton"
-        value="Sign In"
-      />
-      <form className="formButtonWrap" action="/home"><button type="submit" className="btn btn-primary featureStripButtonL">Register Now</button></form>
-    </form>
-  </div>
-  )
+firebase.initializeApp({
+  apiKey: "AIzaSyAVsZOZEhoiNqw0XiDIXbuGPk2mesymkxE",
+  authDomain: "operation-independence.firebaseapp.com"
+});
+
+class SignIn extends Component {
+  state = { isSignedIn: false };
+  uiConfig = {
+    signInFlow: "popup",
+    signInOptions: [
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID
+    ],
+    callbacks: {
+      signInSuccess: () => false
+    }
+  };
+
+  componentDidMount = () => {
+    firebase.auth().onAuthStateChanged(user => {
+      this.setState({ isSignedIn: !!user });
+    });
+  };
+
+  render() {
+    return (
+      <Fragment>
+        <Navigation />
+        <div className="signin-form-wrap">
+          <div className="signin-form">
+            <a href="/home">
+              <img src={logo} className="logo" />
+            </a>
+            <StyledFirebaseAuth
+              uiConfig={this.uiConfig}
+              firebaseAuth={firebase.auth()}
+            />
+          </div>
+        </div>
+      </Fragment>
+    );
+  }
 }
 
-export default SignIn
+export default SignIn;

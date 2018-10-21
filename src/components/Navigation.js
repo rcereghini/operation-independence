@@ -7,7 +7,7 @@ import '../styles/navigation.css'
 const Navigation = ({onRouteChange}) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top transparent" id="fullScreenHeaderNav">
-      <a className="navbar-brand" href="#">
+      <a className="navbar-brand" href="/home">
         <img src={navLogo} className="logo" width="150px" className="d-inline-block align-top fullTransparent" alt=""/>
       </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

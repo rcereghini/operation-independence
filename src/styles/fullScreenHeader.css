@@ -1,5 +1,5 @@
 .fullScreenDisplay {
-  padding: 3em 3em 1em 3em;
+  padding: 3em 2em 1em 2em;
   width: 100%;
   font-size: 1.4em;
   background: #757f9a; /* fallback for old browsers */
@@ -30,6 +30,8 @@
 
 .formButtonWrap {
   width: 100%;
+  display: flex;
+  align-items: baseline;
 }
 
 .fullScreenCard h1,
@@ -113,14 +115,12 @@ h2 {
   .getStartedButton {
     padding: 0.5em 1em;
     margin: 0.5em 1.5em;
-    font-size: 1em;
     width: 80%;
   }
 
   .learnMoreButton {
     padding: 0.5em 1em;
     margin: 0.5em 1.5em;
-    font-size: 1em;
     width: 80%;
   }
 
@@ -173,8 +173,8 @@ h2 {
   }
 
   .infoButton {
-    width: 80%;
-    max-width: 80%;
+    width: 88%;
+    max-width: 88%;
     margin: 0.5em auto;
   }
 }
@@ -182,15 +182,56 @@ h2 {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
   .fullScreenCard {
-    width: 88%;
+    width: 100%;
     margin-top: 1.5em;
     margin-bottom: 1em;
+  }
+
+  .infoButton {
+    width: 40%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
   .fullScreenCard {
-    width: 70%;
+    width: 65%;
+    padding-top: 0.5em;
   }
+
+  .fullScreenDisplay {
+    padding-bottom: 0px;
+  }
+
+  .infoButton {
+    width: 90%;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 0.2em 1em;
+    font-size: 0.8em;
+  }
+}
+
+.formButtonWrap {
+  width: 45%;
+}
+
+.fullScreenHeader__button-container {
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.fullScreenHeader__main-title {
+  font-size: 1.5em;
+  margin: 0.7em auto 0.5em;
+}
+
+.fullScreenHeader__sub-title {
+  font-size: 1em;
+  margin: 0.5em auto 1em;
+  padding: 0em 1em;
+}
+
+.launchImage {
+  width: 60%;
 }

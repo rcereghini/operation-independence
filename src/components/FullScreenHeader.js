@@ -12,7 +12,7 @@ const FullScreenHeader = props => {
           {props.headerMaintitle}
         </h2>
         <p className="fullScreenHeader__sub-title">{props.headerSubText}</p>
-        <div className="headerButtonWrap row">
+        <div className="fullScreenHeader__button-container row">
           <form className="formButtonWrap" action="/">
             <button
               type="submit"

@@ -1,127 +1,160 @@
-.stripWrap{
-  display:flex;
-  justify-content:space-around;
+.stripWrap {
+  display: flex;
+  justify-content: space-around;
   padding: 1.5em;
-  margin:2em;
-  margin-bottom:2.5em;
-
+  margin: 2em;
+  margin-bottom: 2.5em;
 }
 
-.featureStrip{
+.featureStrip {
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   box-shadow: 0 1px 7px rgba(0, 0, 0, 0.46);
+  border-radius: 0px;
   margin: 1.7em auto;
 }
 
-.captionWrap{
+.captionWrap {
   margin: 3.3em auto;
   margin-bottom: 40px;
-  text-align:left;
+  text-align: left;
 }
 
-.stripImage{
-  text-align:center;
-  margin: 3.3em ;
-  width:100%;
+.stripImage {
+  text-align: center;
+  margin: 3.3em;
+  width: 100%;
   box-shadow: inset 1px 1px 7px rgba(0, 0, 0, 0.46);
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  );
 }
 
-.featureStripButton{
+.featureStripButton {
   margin: 15px auto;
-  font-size:1.5em;
-  border:black;
-  width:80%;
+  font-size: 1.5em;
+  border: black;
+  width: 80%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .9));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .9));
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.9)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.9)
+  );
 }
 
-.fullCard{
-  display:flex;
+.fullCard {
+  display: flex;
 }
 
-.fullCardWrap{
-  width:100%;
+.fullCardWrap {
+  width: 100%;
 }
 
-h2{
-  font-size:2.7em;
+h2 {
+  font-size: 2em;
 }
 
-p{
-  font-size:1.5em;
+p {
+  font-size: 1.4em;
 }
 
 /* Extra small devices (phones, 600px and down) */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
-  .featureRowR{
+  .featureRowR {
     flex-direction: column-reverse;
   }
 
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-width:88%;
-max-width: 88%; }
+  .stripImage {
+    align-items: center;
+    margin: 2em auto;
+    width: 88%;
+    max-width: 88%;
+  }
 
-  .featureStripButton{
-    width:90%;
+  .featureStripButton {
+    width: 90%;
   }
 }
 
-.captionWrap{
-  width:88%;
+.captionWrap {
+  width: 88%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .featureRowR{
+  .featureRowR {
     flex-direction: column-reverse;
-    align-items:center;
+    align-items: center;
   }
 
-  .captionWrap{
-    text-align:center;
-    margin-top:0px;
+  .captionWrap {
+    text-align: center;
+    margin-top: 0px;
   }
 
-  .imageWrap{
-    text-align:center;
+  .imageWrap {
+    text-align: center;
   }
 
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-    width:200px;
+  .stripImage {
+    align-items: center;
+    margin: 2em auto;
+    width: 200px;
   }
 
-  .featureRowR > img{
-    width:100%;
+  .featureRowR > img {
+    width: 100%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-    width:400px;
+  .stripImage {
+    align-items: center;
+    margin: 2em auto;
+    width: 300px;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
-  .stripImage{
-    align-items:center;
-    margin:2em auto;
-    width:400px;
+  .featureStrip {
+    margin-right: 0px;
   }
 
+  .featureStrip__caption-wrap {
+    padding-top: 3em;
+    padding-left: 3em;
+  }
+  .stripImage {
+    align-items: center;
+    width: 250px;
+    margin: 2em 1em;
+  }
+}
+
+.imageWrap {
+  text-align: center;
+  width: 30%;
+}
+
+.featureRowR {
+  display: flex;
+  justify-content: space-around;
 }

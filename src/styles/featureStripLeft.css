@@ -1,88 +1,88 @@
-.stripWrapL{
-  display:flex;
-  justify-content:space-between;
+.stripWrapL {
+  display: flex;
+  justify-content: space-between;
   padding: 1.5em;
-  margin:2em;
-  margin-bottom:2.5em;
+  margin: 2em;
+  margin-bottom: 2.5em;
 }
 
-.captionWrapL{
+.captionWrapL {
   margin: 3em auto;
   margin-bottom: 40px;
-  text-align:right;
+  text-align: right;
 }
 
-.featureStripButtonL{
+.featureStripButtonL {
   margin: 15px auto;
-  font-size:1.5em;
-  border:black;
+  font-size: 1.5em;
+  border: black;
   width: 80%;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(45, 112, 181, .7), rgba(83, 168, 220, .7));
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  );
 }
-
-h2{
-  font-size:2.7em;
-}
-
-p{
-  font-size:1.5em;
-}
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-  .featureRowR{
+  .featureRowR {
     flex-direction: column-reverse;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .featureRowR{
+  .featureRowR {
     flex-direction: column-reverse;
-    align-items:center;
+    align-items: center;
   }
 
-  .captionWrap{
-    text-align:center;
-    margin-top:0px;
+  .imageWrap {
+    text-align: center;
   }
 
-  .imageWrap{
-    text-align:center;
-  }
-
-  .featureRowR > img{
-    width:100%;
+  .featureRowR > img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 576px) {
-  .featureRowR{
+  .featureRowR {
     flex-direction: column-reverse;
   }
 
-  .featureStripButtonL{
-    width:90%;
+  .featureStripButtonL {
+    width: 90%;
   }
-
-
-
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .featureStripLeft {
+    margin-left: 0px;
+  }
 
+  .featureRowL {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.formButtonWrap {
+}
+.featureStripButtonL {
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
-
 }

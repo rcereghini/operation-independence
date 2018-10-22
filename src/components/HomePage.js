@@ -24,30 +24,32 @@ class App extends Component {
           // headerMaintitle="Drive more business today!"
           headerSubText="with targeted Facebook advertisements to increase conversations and conversions."
         />
-        <a name="features">
+        <div className="featureWrap">
+          <a className="features">
+            <FeatureStrip
+              onRouteChange={this.onRouteChange}
+              headline="Simplifying Facebook Lead Generation"
+              paragraph="We will take care of all the grunt work, and using your listings, generate daily Facebook buyer leads."
+              buttonText="See An Example!"
+              image={searchBarImage}
+              id="features"
+            />
+          </a>
+          <FeatureStripLeft
+            headline="Your Very Own Listing Page"
+            paragraph="Don't have a page for your new listing? No problem! We've got you covered with a custom OpinAds listing page that will be connected to your Facebook Advertisement."
+            buttonText="View a Sample Listing"
+            image={calculateImage}
+          />
           <FeatureStrip
             onRouteChange={this.onRouteChange}
-            headline="Simplifying Facebook Lead Generation"
-            paragraph="We will take care of all the grunt work, and using your listings, generate daily Facebook buyer leads."
-            buttonText="See An Example!"
-            image={searchBarImage}
-            id="features"
+            headline="Don't have a business page?"
+            paragraph="Don't worry! We'll get you setup with everything you need to get Facebook ads up and running."
+            buttonText="Get Started Now!"
+            image={launchFeatureImage}
+            buttonFunction="() => onRouteChange('signIn')"
           />
-        </a>
-        <FeatureStripLeft
-          headline="Your Very Own Listing Page"
-          paragraph="Don't have a page for your new listing? No problem! We've got you covered with a custom OpinAds listing page that will be connected to your Facebook Advertisement."
-          buttonText="View a Sample Listing"
-          image={calculateImage}
-        />
-        <FeatureStrip
-          onRouteChange={this.onRouteChange}
-          headline="Don't have a business page?"
-          paragraph="Don't worry! We'll get you setup with everything you need to get Facebook ads up and running."
-          buttonText="Get Started Now!"
-          image={launchFeatureImage}
-          buttonFunction="() => onRouteChange('signIn')"
-        />
+        </div>
         <a name="pricing">
           <Jumbotron />
         </a>

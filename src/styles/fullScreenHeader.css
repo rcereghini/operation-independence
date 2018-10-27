@@ -1,237 +1,102 @@
-.fullScreenDisplay {
-  padding: 3em 2em 1em 2em;
+.form-button-wrap {
   width: 100%;
-  font-size: 1.4em;
-  background: #757f9a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(45, 112, 181, 0.7),
-    rgba(83, 168, 220, 0.7)
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    rgba(45, 112, 181, 0.7),
-    rgba(83, 168, 220, 0.7)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-position: center;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
-.fullScreenCard {
-  width: 45%;
-  margin: 1.5em auto;
-  padding: 1.5em;
+.fullScreen-display {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  padding-top: 1.88em;
+  padding-bottom: 1.88em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.fullScreen-card {
+  width: 88%;
+  z-index: 2;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 3em auto 1em;
   color: rgb(15, 47, 86);
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  padding: 2.88em 3em 1.88em;
   background: white;
   background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-.formButtonWrap {
-  width: 100%;
-  display: flex;
-  align-items: baseline;
-}
-
-.fullScreenCard h1,
+.fullScreen-card h1,
 h2 {
   margin-bottom: 0.7em;
 }
 
-.launchImage {
-  width: 90%;
+.fullScreen-card-header-image {
+  width: 88%;
+  margin: 0em auto 1em;
 }
 
-.infoButton {
-  padding: 0.3em 0.7em;
+.launch-image {
+  width: 100%;
+}
+
+.info-button {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  color: white;
   font-size: 1.3em;
   font-weight: 800;
-  width: 45%;
-  max-width: 45%;
-  margin: 0 auto;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
-  border: 0px;
+  width: 100%;
+  margin: 0.44em auto;
+  padding: 0.3em 0.7em;
 }
 
-.headerLogo {
-  width: 80%;
-  margin: 2em auto 1em;
-}
-
-.getStartedButton {
-  /* background-color:rgba(237,185,98); */
+.take-off-button {
+  background-color: rgba(237, 185, 98);
   background: radial-gradient(
     circle,
     rgba(247, 209, 144, 1) 0%,
     rgba(237, 185, 98, 1) 100%
   );
-  border: 0px;
-  /* border:3px solid rgba(83, 168, 220); */
-  color: white;
+  border: black;
 }
 
-.getStartedButton:hover {
+.take-off-button:hover {
   box-shadow: 0px 0px 15px rgba(237, 234, 98, 1);
 }
 
-.learnMoreButton {
-  background: #757f9a; /* fallback for old browsers */
+.learn-more-button {
+  background: #757f9a;
   background: -webkit-linear-gradient(
     to right,
     rgba(45, 112, 181, 0.7),
     rgba(83, 168, 220, 0.7)
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  );
   background: linear-gradient(
     to right,
     rgba(45, 112, 181, 0.7),
     rgba(83, 168, 220, 0.7)
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
   border: black;
 }
 
-.fullScreenCardLogo {
-  width: 70%;
-  margin: 1em;
-}
-
 .fullScreenHeader__main-title {
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 0em auto 1em;
   font-weight: 800;
   color: rgba(45, 112, 181, 1);
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-  .headerButtonWrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .getStartedButton {
-    padding: 0.5em 1em;
-    margin: 0.5em 1.5em;
-    width: 80%;
-  }
-
-  .learnMoreButton {
-    padding: 0.5em 1em;
-    margin: 0.5em 1.5em;
-    width: 80%;
-  }
-
-  .fullScreenCardLogo {
-    margin: 1em auto 0em;
-    width: 80%;
-  }
-
-  .fullScreenDisplay {
-    font-size: 0.8em;
-    margin-top: 1.7em;
-    padding: 3em 0em;
-    padding-bottom: 0em;
-  }
-
-  .infoButton {
-    width: 85%;
-    max-width: 95%;
-  }
-
-  .fullScreenHeader__main-title {
-    font-size: 2em;
-    margin: 0.7em auto 0.5em;
-  }
-
-  .fullScreenHeader__sub-title {
-    font-size: 1.5em;
-    margin: 0.5em auto 1em;
-    padding: 0em 1em;
-  }
-
-  .fullScreenCard {
-    width: 100%;
-    max-width: 100%;
-    margin: 3em auto;
-  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 576px) {
-  .fullScreenCard {
-    width: 88%;
-  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-  .fullScreenCard {
-    width: 88%;
-  }
-
-  .infoButton {
-    width: 88%;
-    max-width: 88%;
-    margin: 0.5em auto;
-  }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-  .fullScreenCard {
-    width: 100%;
-    margin-top: 1.5em;
-    margin-bottom: 1em;
-  }
-
-  .infoButton {
-    width: 40%;
-  }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 993px) {
-  .fullScreenCard {
-    width: 65%;
-    padding-top: 0.5em;
-  }
-
-  .fullScreenDisplay {
-    padding-bottom: 0px;
-  }
-
-  .infoButton {
-    width: 90%;
-    max-width: 100%;
-    margin: 0px auto;
-    padding: 0.2em 1em;
-    font-size: 0.8em;
-  }
-}
-
-.formButtonWrap {
-  width: 45%;
-}
-
-.fullScreenHeader__button-container {
-  margin: 0 auto;
-  justify-content: space-around;
-}
-
-.fullScreenHeader__main-title {
-  font-size: 1.5em;
-  margin: 0.7em auto 0.5em;
-}
-
-.fullScreenHeader__sub-title {
-  font-size: 1em;
-  margin: 0.5em auto 1em;
-  padding: 0em 1em;
-}
-
-.launchImage {
-  width: 60%;
 }

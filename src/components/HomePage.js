@@ -16,65 +16,66 @@ import searchBarImage from "../images/fullScreenHeader_searchBar.png";
 import "../styles/homePage.css";
 
 const particlesOptions = {
-  pparticles: {
-    number: {
-      value: 400,
-      density: {
-        enable: true,
-        value_area: 800
-      }
-    },
-    line_linked: {
-      enable: true,
-      distance: 150,
-      color: "rgb(45, 122, 141)",
-      opacity: 0.4,
-      width: 1
-    },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "#000000"
-      },
-      polygon: {
-        nb_sides: 7
-      }
-    }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "grab"
-      },
-      onclick: {
-        enable: true,
-        mode: "push"
-      },
-      resize: true
-    },
-    modes: {
-      grab: {
-        distance: 400,
-        line_linked: {
-          opacity: 1
-        }
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4
-      }
-    }
-  },
-  retina_detect: true
+  // particles: {
+  //   number: {
+  //     value: 400,
+  //     density: {
+  //       enable: true,
+  //       value_area: 800
+  //     }
+  //   },
+  //   line_linked: {
+  //     enable: true,
+  //     distance: 150,
+  //     color: "rgb(45, 122, 141)",
+  //     opacity: 0.4,
+  //     width: 1
+  //   },
+  //   shape: {
+  //     type: "circle",
+  //     stroke: {
+  //       width: 0,
+  //       color: "#000000"
+  //     },
+  //     polygon: {
+  //       nb_sides: 7
+  //     }
+  //   }
+  // },
+  // interactivity: {
+  //   detect_on: "canvas",
+  //   events: {
+  //     onhover: {
+  //       enable: true,
+  //       mode: "grab"
+  //     },
+  //     onclick: {
+  //       enable: true,
+  //       mode: "push"
+  //     },
+  //     resize: true
+  //   },
+  //   modes: {
+  //     grab: {
+  //       distance: 400,
+  //       line_linked: {
+  //         opacity: 1
+  //       }
+  //     },
+  //     repulse: {
+  //       distance: 200,
+  //       duration: 0.4
+  //     }
+  //   }
+  // },
+  // retina_detect: true
 };
 
 class App extends Component {
   render() {
     return (
       <Fragment className="homePage">
+        <Particles className="particles" params={particlesOptions} />
         <Navigation onRouteChange={this.onRouteChange} />
         <FullScreenHeader
           headerTitle="Opin Ads"
@@ -85,7 +86,6 @@ alone! Even more powerful is their advertising abilities with advanced geographi
 based targeting. We find potential buyers in your targeted areas using the most modern methods available and connect them to you."
         />
         <div className="featureWrap">
-          <Particles className="particles" params={particlesOptions} />
           <a className="features">
             <FeatureStrip
               onRouteChange={this.onRouteChange}

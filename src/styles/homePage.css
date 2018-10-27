@@ -21,6 +21,18 @@ canvas {
   bottom: 0;
   left: 0;
   z-index: 0;
+  background: #757f9a;
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 1),
+    rgba(83, 168, 220, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 1),
+    rgba(83, 168, 220, 1)
+  );
+  background-position: center;
 }
 
 .features {

@@ -76,16 +76,6 @@ website to greatly increase your conversions. "
         <a name="pricing">
           <Pricing
             title1="-Lead Generation Ads-"
-            body1="Whats Included:
-• Custom Advertisement for your Business page to get
-potential buyers to fill out a form page of their contact
-information.
-• Average Leads Per Month - 15+*
-• Instant lead notifications via email or text. (working with a
-team and need multiple people on the list? let us know!)
-•
-Need a Facebook business page or don’t have an IDX enabled website?
-We can help! - Click here to find out more!"
             title2="-Messenger Ads-"
             body2="Whats Included:
 • Custom Advertisement geared towards getting potential
@@ -96,7 +86,7 @@ Custom F.A.Q. Responses tailored to your business.
 •
 Need a Facebook business page? We can help! - Click here to find out
 more!"
-            title3="-Website Traffic Ads"
+            title3="-Website Traffic Ads-"
             body3="Whats Included:
 • Custom Advertisement geared towards getting potential
 buyers to visit your already existing web site about
@@ -107,6 +97,9 @@ Custom F.A.Q. Responses tailored to your business.
 •
 Need a Facebook business page? We can help! - Click here to find out
 more!"
+            buttonText1="PLACEHOLDER"
+            buttonText2="PLACEHOLDER"
+            buttonText3="PLACEHOLDER"
           />
           {/* <Jumbotron /> */}
         </a>

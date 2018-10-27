@@ -34,6 +34,34 @@
 
 .cardButton {
   width: 100%;
+  border: black;
+  margin-bottom: 1em;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  background: #757f9a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.9)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.9)
+  );
+}
+
+.card-title {
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+.card-body {
+  text-align: left;
+  padding: 0em 2em;
+}
+
+.card-list {
+  margin-bottom: 2em;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

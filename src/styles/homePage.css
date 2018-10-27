@@ -16,3 +16,12 @@
   left: 0;
   z-index: -1;
 }
+
+.features {
+  margin: 0px;
+}
+
+.featureWrap {
+  background: url("../images/background.jpg");
+  padding: 2em 0px;
+}

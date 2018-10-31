@@ -5,21 +5,31 @@ import Navigation from "../components/Navigation.js";
 import "../styles/signIn.css";
 import logo from "../images/OpinAdsLogo.png";
 
-firebase.initializeApp({
-  apiKey: "AIzaSyAVsZOZEhoiNqw0XiDIXbuGPk2mesymkxE",
-  authDomain: "operation-independence.firebaseapp.com"
-});
+const config = {
+  apiKey: "AIzaSyAJ71hexjvGhJt0U9PD7uKY3rE10EdhnOo",
+  authDomain: "opinads.com"
+};
+
+firebase.initializeApp(config);
 
 class SignIn extends Component {
-  state = { isSignedIn: false };
+  state = {
+    isSignedIn: false,
+    userName: ""
+  };
   uiConfig = {
     signInFlow: "popup",
     signInOptions: [
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
       firebase.auth.FacebookAuthProvider.PROVIDER_ID
     ],
+    signInSuccessUrl: "/home",
     callbacks: {
-      signInSuccess: () => false
+      signInSuccess: () => {
+        this.setState({
+          userName: "Frank"
+        });
+      }
     }
   };
 
@@ -33,16 +43,23 @@ class SignIn extends Component {
     return (
       <Fragment>
         <Navigation />
-        <div className="signin-form-wrap">
-          <div className="signin-form">
-            <a href="/home">
-              <img src={logo} className="logo" />
-            </a>
-            <StyledFirebaseAuth
-              uiConfig={this.uiConfig}
-              firebaseAuth={firebase.auth()}
-            />
+        ({this.state.isSignedIn}) ?
+        <div>
+          <div className="signin-form-wrap">
+            <div className="signin-form">
+              <a href="/home">
+                <img src={logo} className="logo" />
+              </a>
+              <StyledFirebaseAuth
+                uiConfig={this.uiConfig}
+                firebaseAuth={firebase.auth()}
+              />
+            </div>
           </div>
+        </div>
+        :
+        <div>
+          <h2>You are now signed in.</h2>
         </div>
       </Fragment>
     );

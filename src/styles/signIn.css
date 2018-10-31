@@ -34,3 +34,21 @@
 .signInButton {
   margin: 1em;
 }
+
+.loggedInScreen {
+  background: linear-gradient(
+    to right,
+    rgba(45, 112, 181, 0.7),
+    rgba(83, 168, 220, 0.7)
+  );
+  color: white;
+  text-align: center;
+  height: 100vh;
+}
+
+.firebaseUserImage {
+  border-radius: 50%;
+  width: 50%;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
